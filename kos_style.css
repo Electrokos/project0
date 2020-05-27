@@ -22,9 +22,17 @@
   background-color: black;
   position: fixed;
   width: 125px;
-  height: 90%; }
+  height: 95%; }
   .side_bar_kos a {
     display: block;
     margin: 10px; }
+    .side_bar_kos a:visited {
+      color: red;
+      text-decoration: none; }
+    .side_bar_kos a:hover {
+      color: hotpink; }
+    .side_bar_kos a:link {
+      color: red;
+      text-decoration: none; }
 
 /*# sourceMappingURL=kos_style.css.map */

@@ -36,9 +36,20 @@ $side_bar_txt_color:  green;
   background-color: $side_bar_color;
   position: fixed;
   width: $side_bar_width;
-  height: 90%;
+  height: 95%;
   a{
     display: block;
     margin: 10px;
+    &:visited {
+      color:red;
+      text-decoration: none;
+    }
+    &:hover {
+      color:hotpink;
+    }
+    &:link {
+      color: red;
+      text-decoration: none;
+    }
   }
 }
