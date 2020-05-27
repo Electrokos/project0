@@ -1,0 +1,44 @@
+$padding_main_frame:  10px;
+$margin_main_frame:   10px;
+$side_bar_color:      black;
+$grid_gap_px:         10px;
+$high_main_frame:     200px;
+$side_bar_width:      125px;
+$side_bar_txt_color:  green;
+#main_frame_kos{
+  margin: $margin_main_frame;
+  margin-left: $side_bar_width;
+  padding: $padding_main_frame;
+  display: grid;
+  grid-gap: $grid_gap_px;
+  min-height: $high_main_frame;
+
+  .header_kos{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .footer_info_kos{
+    grid-column: 2 / span 3;
+    grid-row: 6;
+  }
+
+  .main_data_kos{
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 5;
+  }
+}
+
+.side_bar_kos{
+  color: $side_bar_txt_color;
+  text-align: center;
+  background-color: $side_bar_color;
+  position: fixed;
+  width: $side_bar_width;
+  height: 90%;
+  a{
+    display: block;
+    margin: 10px;
+  }
+}

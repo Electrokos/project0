@@ -1,0 +1,30 @@
+#main_frame_kos {
+  margin: 10px;
+  margin-left: 125px;
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  min-height: 200px; }
+  #main_frame_kos .header_kos {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center; }
+  #main_frame_kos .footer_info_kos {
+    grid-column: 2 / span 3;
+    grid-row: 6; }
+  #main_frame_kos .main_data_kos {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 5; }
+
+.side_bar_kos {
+  color: green;
+  text-align: center;
+  background-color: black;
+  position: fixed;
+  width: 125px;
+  height: 90%; }
+  .side_bar_kos a {
+    display: block;
+    margin: 10px; }
+
+/*# sourceMappingURL=kos_style.css.map */
