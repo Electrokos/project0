@@ -1,9 +1,9 @@
 $padding_main_frame:  10px;
 $margin_main_frame:   10px;
-$side_bar_color:      black;
 $grid_gap_px:         10px;
 $high_main_frame:     200px;
-$side_bar_width:      125px;
+$side_bar_color:      #0C0C0C;
+$side_bar_width:      205px;
 $side_bar_txt_color:  green;
 #main_frame_kos{
   margin: $margin_main_frame;
@@ -11,6 +11,8 @@ $side_bar_txt_color:  green;
   padding: $padding_main_frame;
   display: grid;
   grid-gap: $grid_gap_px;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  grid-template-rows: auto;
   min-height: $high_main_frame;
 
   .header_kos{
@@ -20,14 +22,23 @@ $side_bar_txt_color:  green;
   }
 
   .footer_info_kos{
-    grid-column: 2 / span 3;
-    grid-row: 6;
+    align-self: end;
+    grid-column: 1 / span 3;
+    grid-row-end: span 6;
   }
 
   .main_data_kos{
-    grid-column: 2 / span 3;
-    grid-row: 2 / span 5;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 4;
   }
+}
+
+.footer_info_kos{
+  bottom: 10px;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
 
 .side_bar_kos{
@@ -35,17 +46,18 @@ $side_bar_txt_color:  green;
   text-align: center;
   background-color: $side_bar_color;
   position: fixed;
+  overflow-x: hidden;
   width: $side_bar_width;
-  height: 95%;
+  height: 90%;
   a{
     display: block;
     margin: 10px;
+    &:hover {
+      color:darkgreen;
+    }
     &:visited {
       color:red;
       text-decoration: none;
-    }
-    &:hover {
-      color:hotpink;
     }
     &:link {
       color: red;
