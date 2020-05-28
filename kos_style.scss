@@ -1,9 +1,11 @@
+$border_screen_media: 500px;
 $padding_main_frame:  10px;
 $margin_main_frame:   10px;
 $grid_gap_px:         10px;
 $high_main_frame:     200px;
 $side_bar_color:      #0C0C0C;
 $side_bar_width:      205px;
+$side_bar_width_small:50px;
 $side_bar_txt_color:  green;
 #main_frame_kos{
   margin: $margin_main_frame;
@@ -49,7 +51,7 @@ $side_bar_txt_color:  green;
   overflow-x: hidden;
   width: $side_bar_width;
   height: 90%;
-  a{
+  .big_screen_kos {a{
     display: block;
     margin: 10px;
     &:hover {
@@ -63,5 +65,30 @@ $side_bar_txt_color:  green;
       color: red;
       text-decoration: none;
     }
+  }}
+  .small_screean_kos {a{
+    display: none;
+  }}
+  @media screen and (max-width: $border_screen_media){
+    .big_screen_kos{ a{
+      display: none;
+      margin: 10px;
+      &:hover {
+        color:darkgreen;
+      }
+      &:visited {
+        color:red;
+        text-decoration: none;
+      }
+      &:link {
+        color: red;
+        text-decoration: none;
+      }
+    }
+    }
+    .small_screean_kos {a{
+      display: block;
+    }
   }
+}
 }

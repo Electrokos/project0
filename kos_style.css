@@ -22,6 +22,7 @@
 .footer_info_kos {
   bottom: 10px;
   overflow: hidden;
+  position: fixed;
   text-align: center;
   width: 100%; }
 
@@ -33,16 +34,24 @@
   overflow-x: hidden;
   width: 205px;
   height: 90%; }
-  .side_bar_kos a {
+  .side_bar_kos.big_screen_kos a {
     display: block;
     margin: 10px; }
-    .side_bar_kos a:hover {
+    .side_bar_kos.big_screen_kos a:hover {
       color: darkgreen; }
-    .side_bar_kos a:visited {
+    .side_bar_kos.big_screen_kos a:visited {
       color: red;
       text-decoration: none; }
-    .side_bar_kos a:link {
+    .side_bar_kos.big_screen_kos a:link {
       color: red;
       text-decoration: none; }
+  .side_bar_kos.small_screean_kos a {
+    display: none; }
+  @media screen and (max-width: 500px) {
+    .side_bar_kos.big_screen_kos a {
+      display: none;
+    }
+    .side_bar_kos.small_screean_kos a {
+      display: block; } }
 
 /*# sourceMappingURL=kos_style.css.map */
