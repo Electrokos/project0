@@ -34,24 +34,39 @@
   overflow-x: hidden;
   width: 205px;
   height: 90%; }
-  .side_bar_kos.big_screen_kos a {
+  .side_bar_kos a.big_screen_kos {
     display: block;
     margin: 10px; }
-    .side_bar_kos.big_screen_kos a:hover {
+    .side_bar_kos a.big_screen_kos:visited {
+      color: red;
+      text-decoration: none; }
+    .side_bar_kos a.big_screen_kos:link {
+      color: red;
+      text-decoration: none; }
+    .side_bar_kos a.big_screen_kos:hover {
       color: darkgreen; }
-    .side_bar_kos.big_screen_kos a:visited {
-      color: red;
-      text-decoration: none; }
-    .side_bar_kos.big_screen_kos a:link {
-      color: red;
-      text-decoration: none; }
-  .side_bar_kos.small_screean_kos a {
+  .side_bar_kos a.small_screen_kos {
     display: none; }
-  @media screen and (max-width: 500px) {
-    .side_bar_kos.big_screen_kos a {
-      display: none;
-    }
-    .side_bar_kos.small_screean_kos a {
-      display: block; } }
+
+@media screen and (max-width: 500px) {
+  .side_bar_kos a.big_screen_kos {
+    display: none; }
+  .side_bar_kos a.small_screen_kos {
+    display: block;
+    margin: 10px; }
+    .side_bar_kos a.small_screen_kos:visited {
+      color: red;
+      text-decoration: none; }
+    .side_bar_kos a.small_screen_kos:link {
+      color: red;
+      text-decoration: none; }
+    .side_bar_kos a.small_screen_kos:hover {
+      color: darkgreen; }
+
+  .side_bar_kos {
+    width: 50px; }
+
+  #main_frame_kos {
+    margin-left: 50px; } }
 
 /*# sourceMappingURL=kos_style.css.map */

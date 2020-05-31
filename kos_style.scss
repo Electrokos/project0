@@ -51,12 +51,9 @@ $side_bar_txt_color:  green;
   overflow-x: hidden;
   width: $side_bar_width;
   height: 90%;
-  .big_screen_kos {a{
+  a.big_screen_kos {
     display: block;
     margin: 10px;
-    &:hover {
-      color:darkgreen;
-    }
     &:visited {
       color:red;
       text-decoration: none;
@@ -65,17 +62,23 @@ $side_bar_txt_color:  green;
       color: red;
       text-decoration: none;
     }
-  }}
-  .small_screean_kos {a{
+    &:hover {
+      color:darkgreen;
+    }
+  }
+  a.small_screen_kos {
     display: none;
-  }}
+  }
+}
   @media screen and (max-width: $border_screen_media){
-    .big_screen_kos{ a{
+    .side_bar_kos{
+      a.big_screen_kos{
       display: none;
+    }
+
+    a.small_screen_kos {
+      display: block;
       margin: 10px;
-      &:hover {
-        color:darkgreen;
-      }
       &:visited {
         color:red;
         text-decoration: none;
@@ -84,11 +87,16 @@ $side_bar_txt_color:  green;
         color: red;
         text-decoration: none;
       }
-    }
-    }
-    .small_screean_kos {a{
-      display: block;
+      &:hover {
+        color:darkgreen;
+      }
     }
   }
-}
+
+  .side_bar_kos{
+    width: $side_bar_width_small;
+  }
+  #main_frame_kos{
+    margin-left: $side_bar_width_small;
+  }
 }
