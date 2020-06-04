@@ -35,6 +35,22 @@ $side_bar_txt_color:  green;
   }
 }
 
+.data_kos{
+  margin: $margin_main_frame;
+  margin-left: $side_bar_width;
+  padding: $padding_main_frame;
+  table,th,td {
+    border-collapse: collapse;
+    border: 1px solid blue;
+  }
+  table{
+    width: 100%;
+  }
+  th, td{
+    text-align: left;
+  }
+}
+
 .footer_info_kos{
   bottom: 10px;
   overflow: hidden;
@@ -98,6 +114,9 @@ $side_bar_txt_color:  green;
     width: $side_bar_width_small;
   }
   #main_frame_kos{
+    margin-left: $side_bar_width_small;
+  }
+  .data_kos{
     margin-left: $side_bar_width_small;
   }
 }
